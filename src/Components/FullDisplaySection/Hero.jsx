@@ -6,11 +6,11 @@ import { Link } from 'react-router';
 
 const Hero = () => {
     return (
-       <div className="hero bg-gray-100  ">
+       <div className="hero">
   <div className="flex flex-col items-center justify-center my-10  ">
     <h1 className='md:text-[72px] text-[50px] font-semibold m-0 leading-tight'>We Build </h1>
     <h1 className='md:text-[72px] text-[50px] font-semibold m-0 leading-tight'><span className='bg-gradient-to-l from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent'>Productive</span> Apps </h1>
-    <p className='mt-2 text-center px-2 md:px-0'>At HERO.IO , we craft innovative apps designed to make everyday life simpler, smarter, and more exciting.</p>
+    <p className='mt-2 text-center px-2 md:px-0'>At HERO.IO , we craft innovative apps designed to make everyday life simpler, smarter, and more exciting.</p>
     <p className='text-center px-2 md:px-0'> Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
     <div className='flex gap-3 items-center justify-center mt-5'>
       <Link to={'https://play.google.com/store/games?hl=enl'} className='btn font-semibold'><span><img className='w-[25px] h-[25px]' src={playStore} alt="" /></span>Google Play</Link>
