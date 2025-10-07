@@ -5,6 +5,7 @@ import ErrorPage from '../ErrorPages/ErrorPage';
 import AppsPage from '../../Pages/AppsPage';
 import InstalationPages from '../../Pages/InstalationPages';
 import Home from '../../Pages/HomeSection/Home';
+import ViewDetails from '../../Pages/HomeSection/ViewDetails';
 
 export const Router = createBrowserRouter([
     {
@@ -24,6 +25,10 @@ export const Router = createBrowserRouter([
             {
                 path:'/instalation',
                 element:<InstalationPages></InstalationPages>
+            },
+            {
+                path:'/view/:id',
+                element:<ViewDetails></ViewDetails>
             }
         ]
     }

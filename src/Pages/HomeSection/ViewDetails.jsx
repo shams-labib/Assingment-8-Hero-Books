@@ -1,0 +1,69 @@
+
+import { useParams } from 'react-router';
+import useCustom from '../../useHooks/useCustom';
+import dowLoadsImg from '../../assets/icon-downloads.png'
+import star from '../../assets/icon-ratings.png'
+import likes from '../../assets/icon-review.png'
+
+const ViewDetails = () => {
+
+    const {id} = useParams();
+    const cardId = parseInt(id);
+    
+    const data = useCustom();
+    const myData = data.find(item => item.id == cardId);
+
+//       if (!myData) {
+//     return <p className="text-center mt-10 text-gray-500 text-xl">Loading...</p>;
+//   }
+
+ if (!myData) {
+    return (
+      <div className="text-center mt-10 text-xl text-gray-500">
+        Loading details...
+      </div>
+    );
+  }
+
+
+
+    // const {title, companyName,downloads,ratings,reviews,image} = myData;
+    
+
+    return (
+        <div className='flex gap-10 my-15'>
+            <div>
+              <img className='h-[350px] w-[450px] shadow-md' src={myData.image} alt="" />
+            </div>
+            <div className='w-full space-y-4'>
+              <h1 className='text-2xl font-bold'>{myData.title}</h1>
+              <p>Developed by : {myData.companyName}</p>
+              <div className='border-b-1 border-gray-300 pb-6 w-full'>
+
+              </div>
+
+              <div className='flex gap-25 items-center mt-6'>
+                <div>
+                    <img src={dowLoadsImg} alt="" />
+                    <p>Downloads</p>
+                    <p className='text-4xl font-bold'>{myData.downloads}</p>
+                </div>
+               <div>
+                 <img src={star} alt="" />
+                <p>Average Ratings</p>
+                  <p className='text-4xl font-bold'>{myData.ratingAvg}</p>
+               </div>
+                <div>
+                    <img src={likes} alt="" />
+                <p>Total Reviews</p>
+                  <p className='text-4xl font-bold'>{myData.reviews}</p>
+                </div>
+              </div>
+
+              <button className='btn bg-[#00D390] text-white'>Install Now <span>({myData.reviews})MB</span></button>
+            </div>
+        </div>
+    );
+};
+
+export default ViewDetails;
