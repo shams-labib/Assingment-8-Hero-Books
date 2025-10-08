@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react';
 import { addItemStoreDB } from '../../useHooks/Function';
 import { toast } from 'react-toastify';
 import ErrorPage from '../../Components/ErrorPages/ErrorPage';
+import RatingsChart from './RatingsChart';
 
 const ViewDetails = () => {
      const [install, setInstall] = useState(false);
@@ -90,8 +91,15 @@ const ViewDetails = () => {
           </button>
             </div>
         </div>
-        <h1 className='text-xl font-bold'>Description</h1>
+        {/* ekhane recharts dekhaite hobe */}
+        <div className="max-w-4xl mx-auto mt-10">
+      {/* এখানে তুমি image, title, description ইত্যাদি দেখাতে পারবে */}
+        <RatingsChart></RatingsChart>
+    </div>
+        <div>
+          <h1 className='text-xl font-bold'>Description</h1>
         <p className='mt-7'>{myData.description}</p>
+        </div>
         </div>
     );
 };
