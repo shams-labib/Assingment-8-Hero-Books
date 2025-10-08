@@ -7,6 +7,7 @@ import likes from '../../assets/icon-review.png'
 import { useEffect, useState } from 'react';
 import { addItemStoreDB } from '../../useHooks/Function';
 import { toast } from 'react-toastify';
+import ErrorPage from '../../Components/ErrorPages/ErrorPage';
 
 const ViewDetails = () => {
      const [install, setInstall] = useState(false);
@@ -35,7 +36,7 @@ const ViewDetails = () => {
  if (!myData) {
     return (
       <div className="text-center mt-10 text-xl text-gray-500">
-        Loading details...
+        <ErrorPage></ErrorPage>
       </div>
     );
   }

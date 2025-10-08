@@ -2,18 +2,32 @@ import React, { useEffect, useState } from 'react';
 import useCustom from '../useHooks/useCustom';
 import { getStoredBook, removeItemStoreDB } from '../useHooks/Function';
 import InsPage from './InsPage';
+import DataNotFoundPage from './AllAppPages/DataNotFoundPage';
 
 const InstalationPages = () => {
 
-
   const [install, setInstall] = useState([]);
+  const [sort,setSort] = useState("");
+  const handleSort = (type)=>{
+         setSort(type);
+         if(type == "Low to High"){
+           const sortByDownLoads = [...install].sort((a,b)=> a.downloads - b.downloads);
+           setInstall(sortByDownLoads);
+         }
+         if(type == "High to Low"){
+           const sortByDownLoads = [...install].sort((a,b)=> b.downloads - a.downloads);
+           setInstall(sortByDownLoads);
+         }
+  }
+
+
+
   const data = useCustom();
   
 
   useEffect(()=> {
     const getData = getStoredBook();
     const Converted = getData.map(id => parseInt(id));
-    //  const myReadList = data.filter(book => Converted.includes(book.bookId))
     const dataIns = data.filter(item => Converted.includes(item.id));
       setInstall(dataIns);
   },[data])
@@ -32,19 +46,23 @@ const InstalationPages = () => {
                 <p className='text-xl font-semibold'>({install.length}) Apps Found</p>
                 <div>
 <button className="btn" popoverTarget="popover-1" style={{ anchorName: "--anchor-1" } /* as React.CSSProperties */}>
-  Sort by size
+  Sort by : {sort?sort:""}
 </button>
 
 <ul className="dropdown menu w-52 rounded-box bg-base-100 shadow-sm"
   popover="auto" id="popover-1" style={{ positionAnchor: "--anchor-1" } /* as React.CSSProperties */ }>
-  <li><a>Item 1</a></li>
-  <li><a>Item 2</a></li>
+  <li onClick={()=> handleSort("Low to High")}><a>Low to High</a></li>
+  <li onClick={()=> handleSort("High to Low")}><a>High to Low</a></li>
 </ul>
                 </div>
             </div>
-             {
+             <div>
+              {
+                install.length ===0 ? <DataNotFoundPage></DataNotFoundPage> : 
               install.map(data => <InsPage key={data.id} handleRemove={handleRemove} data={data}></InsPage>)
-             }
+             
+              }
+             </div>
             
         </div>
     );

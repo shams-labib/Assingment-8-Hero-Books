@@ -14,7 +14,7 @@ const InsPage = ({data, handleRemove}) => {
                      <div className='flex flex-col items-start justify-center'>
                         <p>{data.title}</p>
                         <div className='flex gap-3 justify-center items-center'>
-                            <span className='flex items-center text-green-400 gap-1'><img className='w-[15px] h-[15px]' src={dowLoadsImg} alt="" />{data.downloads}</span>
+                            <span className='flex items-center text-green-400 gap-1'><img className='w-[15px] h-[15px]' src={dowLoadsImg} alt="" />{data.downloads}M</span>
                             <span className='flex items-center gap-1 text-yellow-400'><img className='w-[15px] h-[15px]' src={star} alt="" />{data.ratingAvg}</span>
                             <span className='text-gray-400'>{data.size} MB</span>
                         </div>

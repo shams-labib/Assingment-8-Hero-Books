@@ -21,18 +21,18 @@ const Hero = () => {
       <div className=' w-screen  bg-gradient-to-r from-[#632EE3] to-[#9F62F2] p-[60px]'>
           <h1 className='text-white text-5xl font-semibold text-center'>Trusted by Millions, Built for You</h1>
 
-         <div className='grid md:grid-cols-3 grid-cols-1 px-10 mt-8'>
-           <div className='text-white text-center'>
+         <div className='grid md:grid-cols-3 grid-cols-1 px-10 mt-8 gap-10'>
+           <div className='text-white text-center cursor-pointer  bg-gradient-to-tr from-purple-500 via-pink-400 to-yellow-400 shadow-md rounded-2xl p-5 transform transition duration-500 hover:scale-100 hover:shadow-2xl'>
             <p>Total Downloads</p>
             <h1  className='text-[70px] font-bold'>29.6M</h1>
             <p>21% more than last month</p>
           </div>
-           <div className='text-white text-center'>
+           <div className='text-white text-center cursor-pointer bg-gradient-to-tr from-purple-500 via-pink-400 to-yellow-400 shadow-md rounded-2xl p-5 transform transition duration-500 hover:scale-100 hover:shadow-2xl'>
             <p>Total Reviews</p>
             <h1  className='text-[70px] font-bold'>906K</h1>
             <p>46% more than last month</p>
           </div>
-           <div className='text-white text-center'>
+           <div className='text-white text-center cursor-pointer bg-gradient-to-tr from-purple-500 via-pink-400 to-yellow-400 shadow-md rounded-2xl p-5 transform transition duration-500 hover:scale-100 hover:shadow-2xl'>
             <p>Active Apps</p>
             <h1  className='text-[70px] font-bold'>28+</h1>
             <p>50+ more will Launch</p>
