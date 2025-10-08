@@ -9,14 +9,14 @@ const AppsPage = () => {
     }
     
     return (
-        <div>
+        <div className='px-6 md:px-0'>
              <div className='text-center py-10 space-y-3'>
-            <h1 className='text-5xl font-semibold'> Our All Applications</h1>
+            <h1 className='md:text-5xl text-4xl font-semibold'> Our All Applications</h1>
             <p>Explore All Apps on the Market developed by us. We code for Millions</p>
         </div>
         <div className='flex justify-between items-center'>
             <h1 className=' text-lg font-bold'><span>({data.length})</span> Apps Found</h1>
-            <label className="input ">
+            <label className="input w-[50%] md:w-[20%]">
   <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <g
       strokeLinejoin="round"
