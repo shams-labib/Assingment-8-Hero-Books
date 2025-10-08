@@ -3,6 +3,7 @@ import Navber from '../FullDisplaySection/Navber';
 import { Outlet } from 'react-router';
 import Hero from '../FullDisplaySection/Hero';
 import Footer from '../FullDisplaySection/Footer';
+ import { ToastContainer } from 'react-toastify';
 
 const Root = () => {
     return (
@@ -15,6 +16,8 @@ const Root = () => {
             </div>
         </div>
         <Footer></Footer>
+
+        <ToastContainer position='top-center' />
         </div>
     );
 };

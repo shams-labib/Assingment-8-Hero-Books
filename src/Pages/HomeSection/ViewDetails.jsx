@@ -4,14 +4,23 @@ import useCustom from '../../useHooks/useCustom';
 import dowLoadsImg from '../../assets/icon-downloads.png'
 import star from '../../assets/icon-ratings.png'
 import likes from '../../assets/icon-review.png'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { addItemStoreDB } from '../../useHooks/Function';
+import { toast } from 'react-toastify';
 
 const ViewDetails = () => {
      const [install, setInstall] = useState(false);
 
-     const handleInstall = ()=>{
+     const handleInstall = (id)=>{
+        addItemStoreDB(id)
          setInstall(true);
      }
+     
+     useEffect(()=> {
+      if(install){
+      toast("Install Succes");
+     }
+     },[install])
 
     const {id} = useParams();
     const cardId = parseInt(id);
@@ -31,9 +40,6 @@ const ViewDetails = () => {
     );
   }
 
-
-
-    // const {title, companyName,downloads,ratings,reviews,image} = myData;
     
 
     return (
@@ -69,7 +75,7 @@ const ViewDetails = () => {
 
               <button
             disabled={install}
-            onClick={handleInstall}
+            onClick={()=>handleInstall(id)}
             className={`btn shadow-md px-6 py-2 rounded-md font-semibold text-white transition-all duration-300 
               ${install ? 'bg-green-400 cursor-not-allowed' : 'bg-[#00D390] hover:bg-[#00b77e]'}`}
           >
