@@ -4,8 +4,14 @@ import useCustom from '../../useHooks/useCustom';
 import dowLoadsImg from '../../assets/icon-downloads.png'
 import star from '../../assets/icon-ratings.png'
 import likes from '../../assets/icon-review.png'
+import { useState } from 'react';
 
 const ViewDetails = () => {
+     const [install, setInstall] = useState(false);
+
+     const handleInstall = ()=>{
+         setInstall(true);
+     }
 
     const {id} = useParams();
     const cardId = parseInt(id);
@@ -61,7 +67,20 @@ const ViewDetails = () => {
                 </div>
               </div>
 
-              <button className='btn bg-[#00D390] text-white shadow-md'>Install Now <span>({myData.reviews})MB</span></button>
+              <button
+            disabled={install}
+            onClick={handleInstall}
+            className={`btn shadow-md px-6 py-2 rounded-md font-semibold text-white transition-all duration-300 
+              ${install ? 'bg-green-400 cursor-not-allowed' : 'bg-[#00D390] hover:bg-[#00b77e]'}`}
+          >
+            {install ? (
+              <>
+                Installed 
+              </>
+            ) : (
+              `Install Now (${myData.size} MB)`
+            )}
+          </button>
             </div>
         </div>
         <h1 className='text-xl font-bold'>Description</h1>

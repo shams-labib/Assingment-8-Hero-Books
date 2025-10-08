@@ -11,7 +11,7 @@ const DataNotFoundPage = () => {
                     <div className='text-center space-y-3 mt-10'>
                         <h1 className='text-4xl font-semibold'>OPPS!! APP NOT FOUND</h1>
                         <p>The App you are requesting is not found on our system.  please try another apps</p>
-                        <Link to={'/apps'} className='btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white px-7'>Go Back</Link>
+                        <Link to={'/'} className='btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white px-7'>Go Back</Link>
                     </div>
                 </div>
     );
