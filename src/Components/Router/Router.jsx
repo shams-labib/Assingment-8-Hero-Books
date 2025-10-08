@@ -29,6 +29,10 @@ export const Router = createBrowserRouter([
             {
                 path:'/view/:id',
                 element:<ViewDetails></ViewDetails>
+            },
+            {
+                path:'*',
+                element:<ErrorPage></ErrorPage>
             }
         ]
     }

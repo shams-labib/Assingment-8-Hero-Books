@@ -6,13 +6,15 @@ import Footer from '../FullDisplaySection/Footer';
 
 const Root = () => {
     return (
-        <div className='flex flex-col'>
+        <div>
+            <div className='flex flex-col'>
             <Navber></Navber>
             {/* <Hero></Hero> */}
-            <div className='flex-1 min-h-screen container mx-auto' >
+            <div className='flex-1 container mx-auto' >
                 <Outlet></Outlet>
             </div>
-            <Footer></Footer>
+        </div>
+        <Footer></Footer>
         </div>
     );
 };
