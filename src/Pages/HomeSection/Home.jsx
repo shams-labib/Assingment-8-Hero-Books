@@ -1,6 +1,7 @@
 import React from 'react';
 import useCustom from '../../useHooks/useCustom';
 import HomePages from './HomePages';
+import { Link } from 'react-router';
 
 const Home = () => {
 
@@ -20,7 +21,7 @@ const Home = () => {
                </div>
                
               <div className='flex items-center justify-center mt-10'>
-                 <button className='btn px-[20px] p-[12px] bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white'>Show All</button>
+                 <Link to={'/apps'} className='btn px-[20px] p-[12px] bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white'>Show All</Link>
               </div>
           
         </div>

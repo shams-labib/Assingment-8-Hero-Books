@@ -214,5 +214,149 @@
       { "name": "4 star", "count": 60 },
       { "name": "5 star", "count": 76 }
     ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/ZryQpkY9HVgaMr2Q2GrFPZcZrMhP63gmdu9BGzE_XrZBcSvvpuzQgsWAzt-57j-dIKDd",
+    "title": "Daily Planner",
+    "companyName": "OrganizeIt",
+    "id": 13,
+    "description": "Daily Planner helps users structure their day by managing tasks, events, and priorities efficiently. The app features reminders, notes, and customizable schedules to improve productivity and reduce stress.",
+    "size": 20,
+    "reviews": 160,
+    "ratingAvg": 4.3,
+    "downloads": "80M",
+    "ratings": [
+      { "name": "1 star", "count": 6 },
+      { "name": "2 star", "count": 12 },
+      { "name": "3 star", "count": 40 },
+      { "name": "4 star", "count": 50 },
+      { "name": "5 star", "count": 52 }
+    ]
+  },
+  {
+    "image": "https://hips.hearstapps.com/hmg-prod/images/roasted-chickpea-tomato-and-chicken-bowls-healthy-chicken-recipes-65e8aa3ca8395.jpg?crop=0.621xw:0.929xh;0.189xw,0.0356xh",
+    "title": "Healthy Recipes",
+    "companyName": "NutriLife",
+    "id": 14,
+    "description": "Healthy Recipes provides a wide range of nutritious recipes with detailed instructions, calorie information, and ingredient substitutes, helping users maintain a balanced diet and improve overall wellness.",
+    "size": 30,
+    "reviews": 250,
+    "ratingAvg": 4.7,
+    "downloads": "79M",
+    "ratings": [
+      { "name": "1 star", "count": 5 },
+      { "name": "2 star", "count": 10 },
+      { "name": "3 star", "count": 40 },
+      { "name": "4 star", "count": 90 },
+      { "name": "5 star", "count": 105 }
+    ]
+  },
+  {
+    "image": "https://www.wikihow.com/images/thumb/1/12/Teach-Yourself-a-Language-Using-Flashcards-Step-7.jpg/v4-460px-Teach-Yourself-a-Language-Using-Flashcards-Step-7.jpg",
+    "title": "Language Flashcards",
+    "companyName": "LinguaSmart",
+    "id": 15,
+    "description": "Language Flashcards helps users expand their vocabulary in multiple languages by providing interactive flashcards, quizzes, and spaced repetition techniques to boost memory retention effectively.",
+    "size": 22,
+    "reviews": 190,
+    "ratingAvg": 4.5,
+    "downloads": "120M",
+    "ratings": [
+      { "name": "1 star", "count": 4 },
+      { "name": "2 star", "count": 8 },
+      { "name": "3 star", "count": 30 },
+      { "name": "4 star", "count": 60 },
+      { "name": "5 star", "count": 88 }
+    ]
+  },
+  {
+    "image": "https://www.thewholepetvet.com/blog/wp-content/uploads/2024/04/iStock-1171733307-1-2000x1334.jpg",
+    "title": "Pet Care",
+    "companyName": "AnimalFriends",
+    "id": 16,
+    "description": "Pet Care offers guidance, reminders, and tips to take better care of pets. From feeding schedules to vet appointment alerts, it ensures the health and happiness of your furry companions.",
+    "size": 28,
+    "reviews": 210,
+    "ratingAvg": 4.6,
+    "downloads": "30M",
+    "ratings": [
+      { "name": "1 star", "count": 3 },
+      { "name": "2 star", "count": 7 },
+      { "name": "3 star", "count": 35 },
+      { "name": "4 star", "count": 80 },
+      { "name": "5 star", "count": 85 }
+    ]
+  },
+  {
+    "image": "https://www.investopedia.com/thmb/ObBgOq9_WGDF6fk7LrRbA9yZUdw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/smart-home.asp-final-5de0da3d6d8a474f9028d26c957255fe.png",
+    "title": "Smart Home",
+    "companyName": "HomeTech",
+    "id": 17,
+    "description": "Smart Home allows users to control lighting, temperature, and appliances remotely. The app enhances convenience, energy efficiency, and home security through intuitive automation and real-time monitoring.",
+    "size": 40,
+    "reviews": 300,
+    "ratingAvg": 4.8,
+    "downloads": "33M",
+    "ratings": [
+      { "name": "1 star", "count": 5 },
+      { "name": "2 star", "count": 10 },
+      { "name": "3 star", "count": 35 },
+      { "name": "4 star", "count": 80 },
+      { "name": "5 star", "count": 170 }
+    ]
+  },
+  {
+    "image": "https://img.freepik.com/free-psd/old-memories-collage-photo-frame-poster-template_47987-30976.jpg?semt=ais_hybrid&w=740&q=80",
+    "title": "Photo Memories",
+    "companyName": "MemoryLane",
+    "id": 18,
+    "description": "Photo Memories allows users to store, organize, and create albums of their favorite memories. With cloud backup and sharing options, preserving moments has never been easier or more secure.",
+    "size": 35,
+    "reviews": 270,
+    "ratingAvg": 4.5,
+    "downloads": "99M",
+    "ratings": [
+      { "name": "1 star", "count": 6 },
+      { "name": "2 star", "count": 12 },
+      { "name": "3 star", "count": 45 },
+      { "name": "4 star", "count": 70 },
+      { "name": "5 star", "count": 137 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF3cinEIwajvdhB7inoos2TTkLI3gwc76xkA&s",
+    "title": "Task Organizer",
+    "companyName": "PlanIt",
+    "id": 19,
+    "description": "Task Organizer simplifies project management and personal task tracking. Users can set priorities, deadlines, and reminders, helping them achieve goals and stay productive in both work and personal life.",
+    "size": 24,
+    "reviews": 190,
+    "ratingAvg": 4.4,
+    "downloads": "66M",
+    "ratings": [
+      { "name": "1 star", "count": 5 },
+      { "name": "2 star", "count": 10 },
+      { "name": "3 star", "count": 35 },
+      { "name": "4 star", "count": 50 },
+      { "name": "5 star", "count": 90 }
+    ]
+  },
+  {
+    "image": "https://edcircuit.com/wp-content/uploads/2022/12/WGU-edCircuit-Virtual-Study-Hall-pic-scaled.jpg",
+    "title": "Virtual Study Room",
+    "companyName": "LearnTogether",
+    "id": 20,
+    "description": "Virtual Study Room provides a collaborative online environment for students to study together, share notes, and host discussion sessions. It enhances learning through community interaction and organized study tools.",
+    "size": 27,
+    "reviews": 210,
+    "ratingAvg": 4.7,
+    "downloads": "31M",
+    "ratings": [
+      { "name": "1 star", "count": 4 },
+      { "name": "2 star", "count": 6 },
+      { "name": "3 star", "count": 35 },
+      { "name": "4 star", "count": 75 },
+      { "name": "5 star", "count": 90 }
+    ]
   }
 ]

@@ -31,18 +31,19 @@ const ViewDetails = () => {
     
 
     return (
-        <div className='flex gap-10 my-15'>
+        <div className='px-7 pb-8'>
+          <div className='flex md:flex-row flex-col  gap-10 my-15 border-b border-gray-300 pb-8'>
             <div>
-              <img className='h-[350px] w-[450px] shadow-md' src={myData.image} alt="" />
+              <img className='h-[350px] w-[450px] shadow-md rounded-xl' src={myData.image} alt="" />
             </div>
-            <div className='w-full space-y-4'>
+            <div className='md:w-full space-y-6'>
               <h1 className='text-2xl font-bold'>{myData.title}</h1>
               <p>Developed by : {myData.companyName}</p>
               <div className='border-b-1 border-gray-300 pb-6 w-full'>
 
               </div>
 
-              <div className='flex gap-25 items-center mt-6'>
+              <div className='flex md:gap-25 gap-15 items-center mt-6'>
                 <div>
                     <img src={dowLoadsImg} alt="" />
                     <p>Downloads</p>
@@ -60,8 +61,11 @@ const ViewDetails = () => {
                 </div>
               </div>
 
-              <button className='btn bg-[#00D390] text-white'>Install Now <span>({myData.reviews})MB</span></button>
+              <button className='btn bg-[#00D390] text-white shadow-md'>Install Now <span>({myData.reviews})MB</span></button>
             </div>
+        </div>
+        <h1 className='text-xl font-bold'>Description</h1>
+        <p className='mt-7'>{myData.description}</p>
         </div>
     );
 };

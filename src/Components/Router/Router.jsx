@@ -2,7 +2,7 @@ import React from 'react';
 import { createBrowserRouter } from 'react-router';
 import Root from '../MainRoot/Root';
 import ErrorPage from '../ErrorPages/ErrorPage';
-import AppsPage from '../../Pages/AppsPage';
+import AppsPage from '../../Pages/AllAppPages/AppsPage';
 import InstalationPages from '../../Pages/InstalationPages';
 import Home from '../../Pages/HomeSection/Home';
 import ViewDetails from '../../Pages/HomeSection/ViewDetails';
