@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import useCustom from '../../useHooks/useCustom';
 import Pages from './Pages';
+import DataNotFoundPage from './DataNotFoundPage';
 
 const AppsPage = () => {
     const data = useCustom();
@@ -9,6 +10,7 @@ const AppsPage = () => {
     const term = search.trim().toLocaleLowerCase();
 
     const SearchFilter = term ? data.filter(item => item.title.toLocaleLowerCase().includes(term)) : data;
+
     
     return (
         <div className='px-6 md:px-0'>
@@ -34,11 +36,13 @@ const AppsPage = () => {
   <input onChange={(e)=> setSearch(e.target.value)} value={search} type="search" required placeholder="Search Products" />
                  </label>
         </div>
-        <div className='grid md:grid-cols-4 grid-cols-1 gap-7 my-10'>
+       {
+        SearchFilter.length > 0 ?  <div className='grid md:grid-cols-4 grid-cols-1 gap-7 my-10'>
             {
                 SearchFilter.map(card => <Pages key={card.id} card={card}></Pages>)
             }
-        </div>
+        </div>: <DataNotFoundPage></DataNotFoundPage>
+       }
         </div>
     );
 };
