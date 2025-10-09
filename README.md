@@ -1,16 +1,7 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1️⃣ প্রজেক্টের নাম: HERO.Io – এটি একটি ওয়েব অ্যাপ যেখানে ব্যবহারকারীরা বিভিন্ন মোবাইল অ্যাপ দেখতে এবং ডাউনলোড করতে পারে।
+2️⃣ অ্যাপ ব্রাউজিং: ব্যবহারকারীরা ওয়েবসাইটে জনপ্রিয় বা ট্রেন্ডিং অ্যাপগুলো এক নজরে দেখতে পারবে।
+3️⃣ ডাউনলোড ফিচার: প্রতিটি অ্যাপের জন্য সরাসরি ডাউনলোড লিংক উপলব্ধ, যা ব্যবহারকারীকে সহজে অ্যাপ ইনস্টল করার সুযোগ দেয়।
+4️⃣ রিভিউ ও রেটিং: ব্যবহারকারীরা প্রতিটি অ্যাপের রেটিং এবং রিভিউ দেখতে পারবে, যাতে ভালো বা খারাপ অ্যাপ সহজে আলাদা করা যায়।
+5️⃣ ডাউনলোড স্ট্যাটিস্টিক্স: প্রতিটি অ্যাপ কতজন ব্যবহারকারী ডাউনলোড করেছে, সেই তথ্যও দেখানো হবে।
+6️⃣ রেস্পন্সিভ ডিজাইন: HERO.Io মোবাইল, ট্যাবলেট এবং ডেস্কটপ সব ডিভাইসে সুন্দরভাবে কাজ করে।
+7️⃣ ভবিষ্যতের ফিচার: ব্যবহারকারীরা অ্যাপ রিভিউ জমা দিতে পারবে এবং নতুন অ্যাপের আপডেট জানতে পারবে।
