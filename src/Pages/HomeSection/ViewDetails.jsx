@@ -12,25 +12,33 @@ import RatingsChart from './RatingsChart';
 import DataNotFoundPage from '../AllAppPages/DataNotFoundPage';
 
 const ViewDetails = () => {
-     const [install, setInstall] = useState(false);
-
-     const handleInstall = (id)=>{
-        addItemStoreDB(id)
-         setInstall(true);
-     }
-     
-     useEffect(()=> {
-      if(install){
-      toast("Install Succes");
-     }
-     },[install])
-
-    const {id} = useParams();
+  const {id} = useParams();
     const cardId = parseInt(id);
     
     const {data} = useCustom();
     const myData = data.find(item => item.id == cardId);
 
+     const [install, setInstall] = useState(false);
+
+     const handleInstall = (id) => {
+    addItemStoreDB(id);
+    setInstall(true);
+
+    let installedApps = JSON.parse(localStorage.getItem('readList')) || [];
+    if (!installedApps.includes(id)) {
+      installedApps.push(id);
+      localStorage.setItem('readList', JSON.stringify(installedApps));
+    }
+
+    toast("Install Success");
+  };
+
+  useEffect(() => {
+    const installedApps = JSON.parse(localStorage.getItem('readlist')) || [];
+    if (installedApps.includes(id)) {
+      setInstall(true);
+    }
+  }, [id]);
 //       if (!myData) {
 //     return <p className="text-center mt-10 text-gray-500 text-xl">Loading...</p>;
 //   }

@@ -3,6 +3,7 @@ import useCustom from '../useHooks/useCustom';
 import { getStoredBook, removeItemStoreDB } from '../useHooks/Function';
 import InsPage from './InsPage';
 import DataNotFoundPage from './AllAppPages/DataNotFoundPage';
+import Loader from './HomeSection/Loader';
 
 const InstalationPages = () => {
 
@@ -22,7 +23,7 @@ const InstalationPages = () => {
 
 
 
-  const {data} = useCustom();
+  const {data, loading} = useCustom();
   
 
   useEffect(()=> {
@@ -58,12 +59,12 @@ const InstalationPages = () => {
             </div>
              <div>
               {
-                install.length ===0 ? <DataNotFoundPage></DataNotFoundPage> : 
+                loading? <Loader></Loader> : 
               install.map(data => <InsPage key={data.id} handleRemove={handleRemove} data={data}></InsPage>)
              
               }
+              
              </div>
-            
         </div>
     );
 };
