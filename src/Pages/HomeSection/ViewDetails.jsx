@@ -9,6 +9,7 @@ import { addItemStoreDB } from '../../useHooks/Function';
 import { toast } from 'react-toastify';
 import ErrorPage from '../../Components/ErrorPages/ErrorPage';
 import RatingsChart from './RatingsChart';
+import DataNotFoundPage from '../AllAppPages/DataNotFoundPage';
 
 const ViewDetails = () => {
      const [install, setInstall] = useState(false);
@@ -37,7 +38,7 @@ const ViewDetails = () => {
  if (!myData) {
     return (
       <div className="text-center mt-10 text-xl text-gray-500">
-        <ErrorPage></ErrorPage>
+        <DataNotFoundPage></DataNotFoundPage>
       </div>
     );
   }
