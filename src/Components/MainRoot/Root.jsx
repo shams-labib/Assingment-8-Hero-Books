@@ -16,7 +16,7 @@ const Root = () => {
      navigation.state
 
    useEffect(() => {
-        if (location.pathname.startsWith('/view/') || location.pathname === '/apps' || location.pathname === '/instalation') {
+        if (location.pathname.startsWith('/view') || location.pathname === '/apps' || location.pathname === '/instalation') {
             setHideHero(true);
         } else {
             setHideHero(false);
