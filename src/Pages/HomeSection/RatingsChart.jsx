@@ -4,16 +4,14 @@ import useCustom from '../../useHooks/useCustom';
 import { useParams } from 'react-router-dom';
 
 const RatingsChart = () => {
-  const { id } = useParams(); // ধরো route: /details/:id
-  const appData = useCustom();
+  const { id } = useParams(); 
+  const {data} = useCustom();
 
-  // ensure data is loaded
-  if (!appData || appData.length === 0) {
+  if (!data || data.length === 0) {
     return <p className="text-center text-gray-500">Loading chart...</p>;
   }
 
-  // find the correct app using the id
-  const app = appData.find(item => item.id === parseInt(id));
+  const app = data.find(item => item.id === parseInt(id));
 
   if (!app) {
     return <p className="text-center text-gray-500">No app found for this ID</p>;
@@ -23,7 +21,7 @@ const RatingsChart = () => {
 
   return (
     <div className="bg-white shadow-lg rounded-xl p-6">
-      <h2 className="text-xl font-semibold mb-5 text-gray-800">{app.title} Ratings</h2>
+      <h2 className="text-xl font-semibold mb-5 text-gray-800">Ratings</h2>
 
       <ResponsiveContainer width="100%" height={300}>
         <BarChart

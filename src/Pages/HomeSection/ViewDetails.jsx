@@ -27,7 +27,7 @@ const ViewDetails = () => {
     const {id} = useParams();
     const cardId = parseInt(id);
     
-    const data = useCustom();
+    const {data} = useCustom();
     const myData = data.find(item => item.id == cardId);
 
 //       if (!myData) {
@@ -91,9 +91,7 @@ const ViewDetails = () => {
           </button>
             </div>
         </div>
-        {/* ekhane recharts dekhaite hobe */}
-        <div className="max-w-4xl mx-auto mt-10">
-      {/* এখানে তুমি image, title, description ইত্যাদি দেখাতে পারবে */}
+        <div className="max-w-4xl mx-auto my-10">
         <RatingsChart></RatingsChart>
     </div>
         <div>

@@ -22,7 +22,7 @@ const InstalationPages = () => {
 
 
 
-  const data = useCustom();
+  const {data} = useCustom();
   
 
   useEffect(()=> {
