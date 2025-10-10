@@ -12,7 +12,7 @@ const HomePages = ({card}) => {
     <img
       src={image}
       alt="Shoes"
-      className="rounded-xl h-[300px] object-cover w-full" />
+      className="rounded-xl md:h-[300px] h-[200px] object-cover w-full" />
   </figure>
   <div className="p-3">
    <h1 className='text-xl font-semibold'>{title}</h1>

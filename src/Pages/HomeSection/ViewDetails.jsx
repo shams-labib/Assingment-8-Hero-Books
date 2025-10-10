@@ -57,7 +57,7 @@ const ViewDetails = () => {
         <div className='px-7 pb-8'>
           <div className='flex md:flex-row flex-col  gap-10 my-15 border-b border-gray-300 pb-8'>
             <div>
-              <img className='h-[350px] w-[450px] shadow-md rounded-xl' src={myData.image} alt="" />
+              <img className='md:h-[350px] w-[450px] shadow-md rounded-xl' src={myData.image} alt="" />
             </div>
             <div className='md:w-full space-y-6'>
               <h1 className='text-2xl font-bold'>{myData.title}</h1>
